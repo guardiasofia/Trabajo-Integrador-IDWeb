@@ -44,10 +44,27 @@ Este proyecto simula el funcionamiento de una plataforma para la empresa fictici
 
 > (Podés incluir capturas de pantalla del sitio una vez terminado)
 
+##📁 Estructura del proyecto
 
-## 🚀 Cómo clonar y ejecutar
+📦 Trabajo-Integrador-IDWeb
+├── 📁 assets
+│   ├── 📁 css
+│   ├── 📁 img
+│   └── 📁 js
+├── index.html
+└── README.md
+
+## 🚀 Cómo clonar y ejecutar el proyecto
+
+1. Cloná el repositorio:
 
 ```bash
-git clone https://github.com/usuario/repositorio.git
-cd repositorio
-abrir index.html con tu navegador
+git clone https://github.com/guardiasofia/Trabajo-Integrador-IDWeb.git
+Ingresá a la carpeta del proyecto:
+
+2. Ingresá a la carpeta del proyecto:
+cd Trabajo-Integrador-IDWeb
+
+3. Abrí el archivo index.html con tu navegador.
+
+💡 Tip: Si usás Visual Studio Code, te recomendamos instalar la extensión Live Server. Luego, hacé clic derecho sobre index.html y seleccioná "Open with Live Server" para visualizarlo de forma dinámica.
