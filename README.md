@@ -45,15 +45,15 @@ Este proyecto simula el funcionamiento de una plataforma para la empresa fictici
 > (Podés incluir capturas de pantalla del sitio una vez terminado)
 
 ## 📁 Estructura del proyecto
-
-📦 Trabajo-Integrador-IDWeb
-├── 📁 assets
-│   ├── 📁 css
-│   ├── 📁 img
-│   └── 📁 js
-├── index.html
-└── README.md
-
+```bash
+📦 Trabajo-Integrador-IDWeb  
+├── 📁 assets  
+│   ├── 📁 css  
+│   ├── 📁 img  
+│   └── 📁 js  
+├── index.html  
+└── README.md  
+```
 ## 🚀 Cómo clonar y ejecutar el proyecto
 
 1. Cloná el repositorio:
