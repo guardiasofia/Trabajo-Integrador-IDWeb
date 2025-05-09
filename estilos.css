@@ -103,3 +103,37 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+input{
+    background-color: white;
+    margin: 10px 20px 0px 10px;
+    padding:10px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+h1{
+    background: #a7007d;
+    margin:20px;
+    text-align: center;
+    border-width: 100%;
+    border-color: darkgray;
+    border-style: solid;
+    border-radius: 10px;
+    border:5px solid transparent;
+
+
+}
+
+h2{
+    background: pink;
+    margin:10px;
+    border-color: transparent;
+    border-radius:10px;
+    border:10px 5px 10px 5px;
+    text-align: center;
+    display: inline;
+}
+
+
+
