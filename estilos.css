@@ -24,50 +24,31 @@
 }
 
 h3{
-    color:black;
-    color:rgb(56, 25, 2);
-    font-family: sans-serif;
+    
+    color:#000000;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: bold;
     font-style: italic;
-    text-align: start;
+    text-align:unset;
     text-decoration: 2;
+    
     line-height: 1px;
+    margin: 0.8cm;
+    border-right: 20cm;
+   
+
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
-    color: #333;
+    background-color: white;
+    color:#333;
 }
 
-header {
-    background-color: #9e02a3;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
 
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 main {
     padding: 2rem;
@@ -81,12 +62,6 @@ ol {
     padding-left: 1.5rem;
 }
 
-li {
-    margin-bottom: 2rem;
-    background-color: #f826c4dc;
-    padding: 1rem;
-    border-radius: 8px;
-}
 
 img {
     margin-top: 0.5rem;
@@ -105,35 +80,86 @@ footer {
 }
 
 input{
-    background-color: white;
+    background-color: #e7e1e1;
     margin: 10px 20px 0px 10px;
     padding:10px;
     border-radius: 5px;
-    padding-left: 20px;
+    text-align: center;
+    padding-left: 2.9cm;
+    margin-left: 1.2cm;
+    border-color: transparent;
 }
 
-h1{
-    background: #a7007d;
-    margin:20px;
-    text-align: center;
-    border-width: 100%;
-    border-color: darkgray;
-    border-style: solid;
-    border-radius: 10px;
-    border:5px solid transparent;
+button {
+    background-color: #a7007d;        /* fondo negro */
+    color: white;                   /* texto blanco */
+    padding: 13px 19px;              /* tamaño más chico */
+    border: none;                   /* sin borde */
+    border-radius: 5px;             /* bordes redondeados */
+    font-size: 14px;
+    cursor:  pointer;
+    display: block;                 /* necesario para centrar con margin */
+    margin:20px 8cm 30px  ;              /* centra horizontalmente */
+}
+
+button:hover {
+   background-color: #696363;  /* color al pasar el mouse */
+}
 
 
+
+/* Header más limpio y profesional */
+header {
+    background-color: #9e02a3;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Adaptabilidad */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "monserrat", sans-serif;
+}
+
+/* Navegación moderna */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    background-color:#a7007d; /* leve transparencia blanca */
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #9e02a3;
 }
 
 h2{
-    background: pink;
-    margin:10px;
-    border-color: transparent;
-    border-radius:10px;
-    border:10px 5px 10px 5px;
     text-align: center;
-    display: inline;
-}
 
+}
 
 
