@@ -1,15 +1,160 @@
 <!DOCTYPE html>
-<html lang='es'> 
-<head> 
-
-    <title>Promociones</title>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Promociones Especiales - IDW S.A</title>
 </head>
 <body>
-            <li>Descuento del 10% por reservas con más de 30 días de anticipación.</li>
-            <li>Alquiler del salón + animación: $80.000</li>
-            <li>Salón con catering incluido desde $120.000</li>
-                 
-    
-    
-    </body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">IDW S.A</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Encabezado -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 text-primary">Promociones Especiales</h1>
+                    <p class="lead">Aprovecha nuestras ofertas exclusivas para tu próximo evento</p>
+                </div>
+
+                <!-- Promociones principales -->
+                <div class="card shadow-lg mb-5">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">Ofertas Destacadas</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                                <div>
+                                    <h3 class="h5 mb-1">Descuento por reserva anticipada</h3>
+                                    <p class="mb-0 text-muted">Reserva con más de 30 días de anticipación</p>
+                                </div>
+                                <div>
+                                    <span class="badge bg-primary rounded-pill fs-6">10% OFF</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                                <div>
+                                    <h3 class="h5 mb-1">Paquete Completo Básico</h3>
+                                    <p class="mb-0 text-muted">Incluye alquiler del salón + servicio de animación</p>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success rounded-pill fs-6">$80.000</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                                <div>
+                                    <h3 class="h5 mb-1">Paquete Premium</h3>
+                                    <p class="mb-0 text-muted">Salón + catering completo + decoración temática</p>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success rounded-pill fs-6">Desde $120.000</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Promociones adicionales -->
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 border-primary shadow-sm">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Promoción de Temporada</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Reserva durante este mes y recibe decoración básica incluida sin costo adicional.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Válido hasta 30/11/2025</small>
+                                    <span class="badge bg-warning text-dark">Limitado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-success shadow-sm">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Pack Familiar</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">2 eventos por el precio de 1.5 (válido para hermanos en el mismo año escolar).</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Todo el año</small>
+                                    <span class="badge bg-info text-dark">Popular</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Llamado a la acción -->
+                <div class="text-center mt-5">
+                    <div class="card bg-light py-4">
+                        <div class="card-body">
+                            <h3 class="h4 mb-3">¿Interesado en nuestras promociones?</h3>
+                            <p class="mb-4">Contáctanos ahora para reservar tu fecha y aprovechar estas ofertas</p>
+                            <a href="contacto.html" class="btn btn-primary btn-lg px-4">Contactar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h4 class="h5 mb-3">IDW S.A - Salones para Eventos</h4>
+                    <p class="small mb-0">© 2025 Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="h6 mb-3">Síguenos en redes</h5>
+                    <div>
+                        <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#" class="text-white mx-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
 </html>
