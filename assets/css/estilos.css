@@ -5,14 +5,12 @@
     --dark-color: #212529;
 }
 
-/* Tipografía */
 body {
     font-family: "Montserrat", system-ui, sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
 }
 
-/* Header */
 .navbar {
     background-color: var(--primary-color) !important;
     padding: 0.75rem 0;
@@ -22,7 +20,6 @@ body {
     font-weight: 700;
 }
 
-/* Cards */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
@@ -38,12 +35,10 @@ body {
     width: 100%;
 }
 
-/* Ratio para imágenes */
 .ratio-16x9 {
     aspect-ratio: 16/9;
 }
 
-/* Botones */
 .btn-primary {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
@@ -54,7 +49,6 @@ body {
     border-color: #8a006b;
 }
 
-/* Footer */
 footer {
     background-color: var(--dark-color);
 }
@@ -67,7 +61,6 @@ footer {
     opacity: 0.8;
 }
 
-/* Responsive */
 @media (max-width: 767.98px) {
     .navbar-collapse {
         background-color: var(--primary-color);
