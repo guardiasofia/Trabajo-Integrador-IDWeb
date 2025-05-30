@@ -1,168 +1,88 @@
-/* estilos.css */
-@font-face {
-    font-family:"monserrat";
-    src: url(fonts/Montserrat-Regular.ttf)format("truetype");
-    font-weight: 100;
+:root {
+    --primary-color: #5f0153;
+    --secondary-color: #a7007d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
 }
 
-@font-face {
-    font-family:"monserrat";
-    src: url(fonts/Montserrat-ExtraBold.ttf)format("truetype");
-    font-weight: 400;
+/* Tipografía */
+body {
+    font-family: "Montserrat", system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
 }
 
-@font-face {
-    font-family:"monserrat";
-    src: url(fonts/Montserrat-Bold.ttf)format("truetype");
-    font-weight: 500;
+/* Header */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 0.75rem 0;
 }
 
-@font-face {
-    font-family:"monserrat";
-    src: url(fonts/Montserrat-Regular.ttf)format("truetype");
+.navbar-brand {
     font-weight: 700;
 }
 
-h3{
-    
-    color:#000000;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    font-style: italic;
-    text-align:unset;
-    text-decoration: 2;
-    
-    line-height: 1px;
-    margin: 0.8cm;
-    border-right: 20cm;
-   
-
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color:#333;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-ol {
-    padding-left: 1.5rem;
-}
-
-
-img {
-    margin-top: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-
-footer {
-    background-color: #a7007d;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
+.card-img-top {
+    object-fit: cover;
     width: 100%;
 }
 
-input{
-    background-color: #e7e1e1;
-    margin: 10px 20px 0px 10px;
-    padding:10px;
-    border-radius: 5px;
-    text-align: center;
-    padding-left: 2.9cm;
-    margin-left: 1.2cm;
-    border-color: transparent;
+/* Ratio para imágenes */
+.ratio-16x9 {
+    aspect-ratio: 16/9;
 }
 
-button {
-    background-color: #a7007d;        /* fondo negro */
-    color: white;                   /* texto blanco */
-    padding: 13px 19px;              /* tamaño más chico */
-    border: none;                   /* sin borde */
-    border-radius: 5px;             /* bordes redondeados */
-    font-size: 14px;
-    cursor:  pointer;
-    display: block;                 /* necesario para centrar con margin */
-    margin:20px 8cm 30px  ;              /* centra horizontalmente */
+/* Botones */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
-button:hover {
-   background-color: #696363;  /* color al pasar el mouse */
+.btn-primary:hover {
+    background-color: #8a006b;
+    border-color: #8a006b;
 }
 
-
-
-/* Header más limpio y profesional */
-header {
-    background-color: #9e02a3;
-    color: white;
-    padding: 1rem 2rem;
+/* Footer */
+footer {
+    background-color: var(--dark-color);
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Adaptabilidad */
+.social-links a {
+    transition: opacity 0.3s ease;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "monserrat", sans-serif;
+.social-links a:hover {
+    opacity: 0.8;
 }
 
-/* Navegación moderna */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
+/* Responsive */
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 0.25rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
 }
 
-nav li {
-    margin: 0;
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-body {
+        padding: 1.25rem;
+    }
 }
-
-nav a {
-    background-color:#a7007d; /* leve transparencia blanca */
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: white;
-    color: #9e02a3;
-}
-
-h2{
-    text-align: center;
-
-}
-
-.bg-primary {
-    background-color: #5f0153 !important;
-}
-
