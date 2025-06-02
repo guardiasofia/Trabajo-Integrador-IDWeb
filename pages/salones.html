@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrar Salones - IDW S.A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">IDW S.A</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="institucional.html">Institucional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="salones.html">Gestion de Salones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="crear-salon.html">Agregar Salon</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Administrar Salones</h1>
+      <a href="crear-salon.html" class="btn btn-primary">Crear Nuevo Salón</a>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Capacidad</th>
+            <th>Zona</th>
+            <th>Precio</th>
+            <th>Servicios</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-salones-body">
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h4 class="h5 mb-3">IDW S.A - Salones para Eventos</h4>
+          <p class="small mb-0">© 2025 Todos los derechos reservados</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <h5 class="h6 mb-3">Síguenos en redes</h5>
+          <div>
+            <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="text-white mx-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <script type="module" src="../assets/js/listar_salones.js"></script></body>
+</html>

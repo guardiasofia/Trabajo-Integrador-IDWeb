@@ -79,3 +79,73 @@ footer {
         padding: 1.25rem;
     }
 }
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Estilos para formularios de administración */
+.form-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.form-header .lead {
+  color: #6c757d;
+}
+
+/* Responsive para tablas */
+@media (max-width: 767.98px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .table {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+}
