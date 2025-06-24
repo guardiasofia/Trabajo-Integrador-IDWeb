@@ -1,6 +1,9 @@
 import { obtenerSalones, guardarSalones } from './storage.js';
+import { checkAuth } from './api/auth-middleware.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (!checkAuth()) return;
+  
   const tabla = document.getElementById('tabla-salones');
   const salones = obtenerSalones();
 

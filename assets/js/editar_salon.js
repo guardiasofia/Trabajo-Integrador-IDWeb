@@ -1,6 +1,10 @@
 import { obtenerSalonPorId, obtenerSalones, guardarSalones } from './storage.js';
+import { checkAuth } from './api/auth-middleware.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+  if (!checkAuth()) return;
+
   const urlParams = new URLSearchParams(window.location.search);
   const id = parseInt(urlParams.get('id'));
   const salon = obtenerSalonPorId(id);

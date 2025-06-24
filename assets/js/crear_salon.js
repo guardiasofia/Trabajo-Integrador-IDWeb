@@ -1,28 +1,33 @@
 import { obtenerSalones, guardarSalones } from './storage.js';
+import { checkAuth } from './api/auth-middleware.js';
 
-document.getElementById('form-crear').addEventListener('submit', function(e) {
-  e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+  if (!checkAuth()) return;
 
-  const nombre = document.getElementById('nombre').value;
-  const capacidad = parseInt(document.getElementById('capacidad').value);
-  const zona = document.getElementById('zona').value;
-  const precio = parseInt(document.getElementById('precio').value);
-  const serviciosTexto = document.getElementById('servicios').value;
-  const servicios = serviciosTexto.split(',').map(s => s.trim()).filter(s => s);
+  document.getElementById('form-crear').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-  const salones = obtenerSalones();
-  const nuevoSalon = {
-    id: Date.now(),
-    nombre,
-    capacidad,
-    zona,
-    servicios,
-    precio
-  };
+    const nombre = document.getElementById('nombre').value;
+    const capacidad = parseInt(document.getElementById('capacidad').value);
+    const zona = document.getElementById('zona').value;
+    const precio = parseInt(document.getElementById('precio').value);
+    const serviciosTexto = document.getElementById('servicios').value;
+    const servicios = serviciosTexto.split(',').map(s => s.trim()).filter(s => s);
 
-  salones.push(nuevoSalon);
-  guardarSalones(salones);
+    const salones = obtenerSalones();
+    const nuevoSalon = {
+      id: Date.now(),
+      nombre,
+      capacidad,
+      zona,
+      servicios,
+      precio
+    };
 
-  alert('Salón creado correctamente');
-  window.location.href = 'salones.html';
+    salones.push(nuevoSalon);
+    guardarSalones(salones);
+
+    alert('Salón creado correctamente');
+    window.location.href = 'salones.html';
+  });
 });

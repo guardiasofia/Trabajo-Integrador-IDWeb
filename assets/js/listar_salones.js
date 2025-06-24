@@ -1,6 +1,8 @@
 import { obtenerSalones, eliminarSalon } from './storage.js';
+import { checkAuth } from './api/auth-middleware.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (!checkAuth()) return;
   mostrarSalones();
 });
 
