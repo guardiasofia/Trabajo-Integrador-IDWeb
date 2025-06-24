@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.location.href = '../../pages/auth/login.html'; 
     return;
   }
-
+  if (window.location.pathname.includes('/admin/') && !validUser) {
+      history.replaceState(null, '', '/index.html');
+  }
   try {
     document.getElementById('userName').textContent = `${currentUser.firstName} ${currentUser.lastName}`;
   } catch (error) {
