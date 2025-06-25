@@ -29,7 +29,7 @@ function mostrarSalones() {
       <td>$${salon.precio.toLocaleString()}</td>
       <td>${Array.isArray(salon.servicios) ? salon.servicios.join(', ') : salon.servicios}</td>
       <td>
-        <a href="editar-salon.html?id=${salon.id}" class="btn btn-sm btn-warning">Editar</a>
+        <a href="../../pages/admin/editar-salon.html?id=${salon.id}" class="btn btn-sm btn-warning">Editar</a>
         <button class="btn btn-sm btn-danger" data-id="${salon.id}">Eliminar</button>
       </td>
     </tr>

@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     guardarSalones(salones);
 
     alert('Salón creado correctamente');
-    window.location.href = 'salones.html';
+    window.location.href = '../../pages/admin/salones.html';
   });
 });

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('servicios').value = salon.servicios.join(', ');
   } else {
     alert('Salón no encontrado');
-    window.location.href = 'salones.html';
+    window.location.href = '../../pages/admin/salones.html';
   }
 
   document.getElementById('form-editar').addEventListener('submit', function(e) {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       guardarSalones(salones);
       alert('Salón actualizado correctamente');
-      window.location.href = 'salones.html';
+      window.location.href = '../../pages/admin/salones.html';
     }
   });
 });

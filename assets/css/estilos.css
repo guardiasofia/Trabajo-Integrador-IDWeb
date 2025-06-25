@@ -110,7 +110,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-/* Estilos para formularios de administración */
 .form-container {
   max-width: 800px;
   margin: 2rem auto;
@@ -134,7 +133,6 @@ footer {
   color: #6c757d;
 }
 
-/* Responsive para tablas */
 @media (max-width: 767.98px) {
   .table-responsive {
     display: block;
