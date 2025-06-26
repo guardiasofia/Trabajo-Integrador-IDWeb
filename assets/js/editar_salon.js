@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('capacidad').value = salon.capacidad;
     document.getElementById('zona').value = salon.zona;
     document.getElementById('precio').value = salon.precio;
+    document.getElementById('estado').value = salon.estado || 'Disponible';
     document.getElementById('servicios').value = salon.servicios.join(', ');
   } else {
     alert('Salón no encontrado');
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         capacidad: parseInt(document.getElementById('capacidad').value),
         zona: document.getElementById('zona').value,
         precio: parseInt(document.getElementById('precio').value),
+        estado: document.getElementById('estado').value,
         servicios: document.getElementById('servicios').value.split(',').map(s => s.trim()).filter(s => s)
       };
 

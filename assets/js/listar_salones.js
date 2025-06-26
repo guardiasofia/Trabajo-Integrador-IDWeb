@@ -15,7 +15,7 @@ function mostrarSalones() {
   if (!salones || salones.length === 0) {
     tablaBody.innerHTML = `
       <tr>
-        <td colspan="6" class="text-center">No hay salones registrados</td>
+        <td colspan="7" class="text-center">No hay salones registrados</td>
       </tr>
     `;
     return;
@@ -27,6 +27,11 @@ function mostrarSalones() {
       <td>${salon.capacidad}</td>
       <td>${salon.zona}</td>
       <td>$${salon.precio.toLocaleString()}</td>
+      <td>
+        <span class="badge bg-${salon.estado === 'Disponible' ? 'success' : 'secondary'}">
+          ${salon.estado || 'Ocupado'}
+        </span>
+      </td>
       <td>${Array.isArray(salon.servicios) ? salon.servicios.join(', ') : salon.servicios}</td>
       <td>
         <a href="../../pages/admin/editar-salon.html?id=${salon.id}" class="btn btn-sm btn-warning">Editar</a>

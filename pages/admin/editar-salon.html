@@ -56,16 +56,10 @@
               <a class="nav-link" href="../contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="salones.html">Gestion de Salones</a>
+              <a class="nav-link active" href="dashboard.html">Panel de Administración</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="crear-salon.html">Agregar Salon</a>
-            </li>
-                        <li class="nav-item">
-              <a class="nav-link" href="usuarios.html">Usuarios</a>
-            </li>
-            <li class="nav-item">
-              <button id="logoutBtn" class="btn btn-link nav-link">Cerrar Sesión</button>
+              <a class="nav-link active" href="../auth/login.html">Cerrar Sesión</a>
             </li>
           </ul>
         </div>
@@ -107,6 +101,14 @@
           <label for="servicios" class="form-label">Servicios incluidos</label>
           <input type="text" class="form-control" id="servicios">
           <div class="form-text">Separados por comas: Animación, Catering, Decoración</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="estado" class="form-label">Estado del salón*</label>
+          <select class="form-select" id="estado" required>
+            <option value="Disponible">Disponible</option>
+            <option value="Ocupado">Ocupado</option>
+          </select>
         </div>
 
         <div class="d-flex justify-content-between mt-5">
